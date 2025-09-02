@@ -1,37 +1,41 @@
-# ✅ FastAPI Tasks API
+✅ FastAPI Tasks API
 
-API de gerenciamento de tarefas construída com **FastAPI**, **SQLModel** e **SQLite**, com suporte a CRUD completo e testes automatizados com **Pytest**.  
-Projeto simples, objetivo e ideal para estudo ou portfólio.
+Task management API built with FastAPI, SQLModel, and SQLite, featuring full CRUD support and automated testing with Pytest.
+A simple, objective project — ideal for study or portfolio.
 
----
+📌 Technologies Used
 
-## 📌 Tecnologias utilizadas
-- [FastAPI](https://fastapi.tiangolo.com/) → Framework rápido para APIs
-- [SQLModel](https://sqlmodel.tiangolo.com/) → ORM baseado em SQLAlchemy + Pydantic
-- [SQLite](https://www.sqlite.org/) → Banco de dados leve para persistência
-- [Uvicorn](https://www.uvicorn.org/) → Servidor ASGI
-- [Pytest](https://docs.pytest.org/) → Testes automatizados
-- [Requests](https://docs.python-requests.org/) → Cliente HTTP para consumo da API
+FastAPI
+ → Fast framework for APIs
 
----
+SQLModel
+ → ORM based on SQLAlchemy + Pydantic
 
-## ⚙️ Instalação e execução local
+SQLite
+ → Lightweight database for persistence
 
-### 1. Clonar o repositório
-```bash
+Uvicorn
+ → ASGI server
+
+Pytest
+ → Automated testing
+
+Requests
+ → HTTP client for API consumption
+
+⚙️ Installation and Local Execution
+1. Clone the repository
 git clone https://github.com/SkAdr1an/fastapi-tasks-api.git
 cd fastapi-tasks-api
 
-Instalar dependências
+2. Install dependencies
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1   # Windows PowerShell
-
-Rodar a aplicação
 pip install -r requirements.txt
 
-Rodar a aplicação
+3. Run the application
 $env:PYTHONPATH = (Get-Location)
 python -m uvicorn app.main:app --reload
 
-🧪 Testes
+4. 🧪 Run tests
 python -m pytest -q
